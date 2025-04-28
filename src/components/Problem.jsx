@@ -2,11 +2,11 @@ import { styled, Stack, Grid, Typography, List, ListItem } from "@mui/material"
 import React from "react"
 import InfoBox from "./InfoBox"
 
-const Title = styled(Typography)(({ theme }) => ({
+const Title = styled(Typography)(({ }) => ({
     fontSize: "24px", fontWeight: "bold"
   }));
   
-const Desc = styled(Typography)(({ theme }) => ({
+const Desc = styled(Typography)(({ }) => ({
     fontSize: "15px", mt: "10px"
 }));
 

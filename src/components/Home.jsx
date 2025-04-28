@@ -22,8 +22,10 @@ export default function Home() {
     };
 
     return (
-    <Box sx={{pl: "100px"}}>
-        <Stack direction={"row"} justifyContent={"space-between"}>
+    <Box  sx={{ 
+        pl: { xs: '50px', md: '100px' }
+      }}>
+        <Stack direction={{ xs: 'column', md: 'row' }} justifyContent={"space-between"}>
             <Stack alignItems={"flex-start"} spacing={7.5}>
                 <Stack>
                     <Typography sx={{fontSize: "58px"}}>Know what<br/>to share.</Typography>

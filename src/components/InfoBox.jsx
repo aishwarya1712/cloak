@@ -6,7 +6,7 @@ export default function InfoBox({ title, description, sx = {} }) {
       sx={{
         width: "100%",
         maxWidth: "380px",
-        height: "335px",
+        minHeight: "335px",
         p: 3,
         borderRadius: "15px",
         boxShadow: 3,

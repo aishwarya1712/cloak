@@ -8,7 +8,10 @@ import CTAButton from './components/CTAButton';
 export default function App() {
   return (
     <>
-      <AppBar position="static" sx={{p: "100px"}} elevation={0}>
+      <AppBar position="static"  sx={{ 
+        px: { xs: '50px', md: '100px' },
+        py: { xs: '50px', md: '100px' },
+      }} elevation={0}>
         {/* <Toolbar>
           <Button color="inherit" component={Link} to="/">Home</Button>
           <Button color="inherit" component={Link} to="/help">Help</Button>
