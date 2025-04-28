@@ -61,7 +61,10 @@ const Problem = () => {
         <Typography sx={{fontSize: "58px", color: "#6694C5", mb: "40px"}}>The Problem</Typography>
         <Grid container spacing={"50px"}>
         {items.map(({ title, description }, i) => (
-        <Grid key={i} display="flex">
+        <Grid key={i} display="flex" sx={{
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}>
           <InfoBox title={title} description={description} />
         </Grid>
         ))}

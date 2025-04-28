@@ -23,7 +23,8 @@ export default function Home() {
 
     return (
     <Box  sx={{ 
-        pl: { xs: '50px', md: '100px' }
+        px: { xs: '20px', md: '100px' },
+        pb: { xs: '20px', md: '100px' }
       }}>
         <Stack direction={{ xs: 'column', md: 'row' }} justifyContent={"space-between"}>
             <Stack alignItems={"flex-start"} spacing={7.5}>
@@ -33,7 +34,7 @@ export default function Home() {
                 </Stack>
                 <RoundedOutlinedButton onClick={handleLearnMore} label={"Learn More"} sx={{fontSize: "16px"}} />
             </Stack>
-            <Stack>
+            <Stack sx={{mx: { xs: '-50px', md: '-100px' }}}>
                 <Box
                     sx={{
                     position: 'relative',

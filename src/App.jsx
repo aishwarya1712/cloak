@@ -9,8 +9,8 @@ export default function App() {
   return (
     <>
       <AppBar position="static"  sx={{ 
-        px: { xs: '50px', md: '100px' },
-        py: { xs: '50px', md: '100px' },
+        px: { xs: '20px', md: '100px' },
+        py: { xs: '20px', md: '100px' },
       }} elevation={0}>
         {/* <Toolbar>
           <Button color="inherit" component={Link} to="/">Home</Button>
