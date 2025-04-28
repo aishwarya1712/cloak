@@ -1,0 +1,69 @@
+import { Box, Stack, Typography } from '@mui/material';
+import RoundedOutlinedButton from './RoundedOutlinedButton';
+import gptScreenshot from '../assets/GPT.svg';
+import cloakScreenshot from '../assets/Cloak.svg';
+import Problem from './Problem';
+import Solution from './Solution';
+import { useRef, forwardRef } from 'react';
+
+const ProblemAndSolution = forwardRef((props, ref) => (
+    <div ref={ref}>
+      <Problem />
+      <Solution />
+    </div>
+  ));
+  
+export default function Home() {
+    const psRef = useRef(null);
+
+    const handleLearnMore = () => {
+        console.log("in handle learn more")
+        psRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    };
+
+    return (
+    <Box sx={{pl: "100px"}}>
+        <Stack direction={"row"} justifyContent={"space-between"}>
+            <Stack alignItems={"flex-start"} spacing={7.5}>
+                <Stack>
+                    <Typography sx={{fontSize: "58px"}}>Know what<br/>to share.</Typography>
+                    <Typography sx={{fontSize: "58px", fontWeight: "bold"}}>Protect<br/>what you<br/> shouldn't.</Typography>
+                </Stack>
+                <RoundedOutlinedButton onClick={handleLearnMore} label={"Learn More"} sx={{fontSize: "16px"}} />
+            </Stack>
+            <Stack>
+                <Box
+                    sx={{
+                    position: 'relative',
+                    }}
+                >
+                    <Box
+                    component="img"
+                    src={gptScreenshot}
+                    alt="GPT screenshot"
+                    sx={{
+                        width: '100%',
+                        display: 'block',
+                    }}
+                    />
+
+                    
+                    <Box
+                    component="img"
+                    src={cloakScreenshot}
+                    alt="Cloak screenshot"
+                    sx={{
+                        position: 'absolute',
+                        top: { xs: 95, md: 115 },
+                        left: { xs: -80, md: -100 },
+                        width: '100%',
+                        zIndex: 1,
+                    }}
+                    />
+                </Box>
+            </Stack>
+        </Stack>
+        <ProblemAndSolution ref={psRef}/>
+    </Box>
+    )
+}
