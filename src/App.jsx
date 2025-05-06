@@ -1,5 +1,5 @@
 import { Routes, Route, Link } from 'react-router-dom';
-import { AppBar, Box, Typography, Toolbar, Button, Container, Stack } from '@mui/material';
+import { AppBar, Box, Typography, Stack } from '@mui/material';
 
 import Home from './components/Home';
 import Help from './components/Help';
@@ -12,10 +12,6 @@ export default function App() {
         px: { xs: '20px', md: '100px' },
         py: { xs: '20px', md: '100px' },
       }} elevation={0}>
-        {/* <Toolbar>
-          <Button color="inherit" component={Link} to="/">Home</Button>
-          <Button color="inherit" component={Link} to="/help">Help</Button>
-        </Toolbar> */}
   <Stack direction={{ xs: 'column', md: 'row' }} spacing={{ xs: 3, md: 0 }} justifyContent="space-between" alignItems={{ xs: 'flex-start', md: 'center' }}>
     <Stack direction="row" spacing={2.5} alignItems="center">
       <Box sx={{ width: 45, height: 45, bgcolor: '#004D9F'}} />
@@ -38,8 +34,8 @@ export default function App() {
       sx={{
         height: 45,
         fontSize: 16,
-        flexShrink: 0,               // keep button from squeezing
-        width: { xs: '100%', sm: 'auto' },  // full-width on phones, auto later
+        flexShrink: 0, 
+        width: { xs: '100%', sm: 'auto' },
       }}
     />
   </Stack>

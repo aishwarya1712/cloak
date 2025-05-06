@@ -1,25 +1,23 @@
 import { Box, Typography } from '@mui/material';
 
-export default function InfoBox({ title, description, sx = {} }) {
+export default function InfoBox({ icon, title, description, sx = {} }) {
   return (
     <Box
       sx={{
         width: "100%",
         maxWidth: "380px",
         minHeight: "335px",
-        p: 3,
+        mt: "100px",
         borderRadius: "15px",
-        boxShadow: 3,
-        border: '1px solid #ffffff',
         overflow: "hidden",
         ...sx,
       }}
     >
+      <img src={icon} />
       <Typography component="div" sx={{ fontSize: "24px", fontWeight: "bold"}}>
         {title}
       </Typography>
-
-      <Typography  component="div" sx={{ fontSize: "16px", mt: "10px"}}>
+      <Typography  component="div" sx={{ fontSize: "16px", mt: "16px", lineHeight: "20px"}}>
         {description}
       </Typography>
     </Box>

@@ -58,17 +58,20 @@ const items = [
 const Problem = () => {
     return (
     <Stack sx={{mt: "60px"}}>
-        <Typography sx={{fontSize: "58px", color: "#6694C5", mb: "40px"}}>The Problem</Typography>
-        <Grid container spacing={"50px"}>
-        {items.map(({ title, description }, i) => (
-        <Grid key={i} display="flex" sx={{
-          justifyContent: "space-between",
-          alignItems: "center",
-        }}>
-          <InfoBox title={title} description={description} />
-        </Grid>
-        ))}
-        </Grid>
+        <Typography sx={{fontSize: "32px", color: "#6694C5", mb: "40px"}}>The Problem</Typography>
+        <Stack direction="row">
+          <Typography sx={{fontSize: "58px", lineHeight: "72px", width: "505px" }}>As soon as you hit send, it's out of your control.</Typography>
+        </Stack>
+        {/* <Grid container spacing={"50px"}>
+          {items.map(({ title, description }, i) => (
+          <Grid key={i} display="flex" sx={{
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}>
+            <InfoBox title={title} description={description} />
+          </Grid>
+          ))}
+        </Grid> */}
         
     </Stack>
     )
