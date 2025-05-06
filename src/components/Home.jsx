@@ -12,7 +12,7 @@ import Footer from './Footer';
 const ProblemAndSolution = forwardRef((props, ref) => (
     <div ref={ref}>
       <Problem />
-      <Divider sx={{mt: "40px", background: "#D9D9D9"}} />
+      <Divider sx={{mt: "100px", background: "#D9D9D9"}} />
       <Solution />
     </div>
   ));
