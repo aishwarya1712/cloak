@@ -1,7 +1,8 @@
 import { Box, Divider, Stack, Typography } from '@mui/material';
 import RoundedOutlinedButton from './RoundedOutlinedButton';
 import gptScreenshot from '../assets/GPT.svg';
-import cloakScreenshot from '../assets/Cloak.svg';
+// import cloakScreenshot from '../assets/Cloak.svg';
+import cloakScreenshot from '../assets/cloak1.svg';
 import Problem from './Problem';
 import Solution from './Solution';
 import { useRef, forwardRef } from 'react';
@@ -38,35 +39,15 @@ export default function Home() {
                 <RoundedOutlinedButton onClick={handleLearnMore} label={"Learn More"} sx={{fontSize: "16px"}} />
             </Stack>
             <Stack sx={{mx: { xs: '-50px', md: '-100px' }}}>
-                <Box
-                    sx={{
-                    position: 'relative',
-                    }}
-                >
-                    <Box
-                    component="img"
-                    src={gptScreenshot}
-                    alt="GPT screenshot"
-                    sx={{
-                        width: '100%',
-                        display: 'block',
-                    }}
-                    />
-
-                    
-                    <Box
-                    component="img"
-                    src={cloakScreenshot}
-                    alt="Cloak screenshot"
-                    sx={{
-                        position: 'absolute',
-                        top: { xs: 95, md: 115 },
-                        left: { xs: -80, md: -100 },
-                        width: '100%',
-                        zIndex: 1,
-                    }}
-                    />
-                </Box>
+            <Box
+                component="img"
+                src={cloakScreenshot}
+                alt="Cloak main screenshot"
+                sx={{
+                    width: '100%',
+                    display: 'block',
+                }}
+            />
             </Stack>
         </Stack>
         <Divider sx={{mt: "40px", background: "#D9D9D9"}} />
