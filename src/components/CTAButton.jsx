@@ -2,6 +2,10 @@ import { Button } from '@mui/material'
 
 export default function CTAButton({
   label,
+  component = null,
+  href = null,
+  target = null,
+  rel = null,
   onClick,
   disabled = false,
   type = 'button',
@@ -11,6 +15,10 @@ export default function CTAButton({
 }) {
   return (
     <Button
+      component={component}
+      href={href}
+      target={target}
+      rel={rel}
       variant="contained"
       onClick={onClick}
       disabled={disabled}

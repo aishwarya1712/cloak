@@ -31,6 +31,10 @@ export default function App() {
 
     <CTAButton
       label="Download Cloak"
+      component="a"
+      href="https://github.com/aishwarya1712/cloak-ui?tab=readme-ov-file#cloak-ui"
+      target="_blank"
+      rel="noopener noreferrer"
       sx={{
         height: 45,
         fontSize: 16,
