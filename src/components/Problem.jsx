@@ -1,6 +1,5 @@
-import { styled, Stack, Grid, Typography, List, ListItem } from "@mui/material"
+import { styled, Stack, Typography, List, ListItem } from "@mui/material"
 import React from "react"
-import InfoBox from "./InfoBox"
 
 const Title = styled(Typography)(({ }) => ({
     fontSize: "24px", fontWeight: "bold"
@@ -85,20 +84,21 @@ const items = [
 const Problem = () => {
     return (
     <Stack sx={{mt: "60px"}}>
-        <Typography sx={{fontSize: "32px", color: "#6694C5", mb: "40px"}}>The Problem</Typography>
-        <Stack direction="row">
-          <Typography sx={{fontSize: "58px", lineHeight: "72px", width: "505px" }}>As soon as you hit send, it's out of your control.</Typography>
+        <Typography sx={{fontSize: "32px", color: "#6694C5", mb: "20px"}}>The Problem</Typography>
+        <Stack direction="row" spacing={20} alignItems={"flex-start"}>
+          <Typography sx={{fontSize: "58px", lineHeight: "72px", width: "337px" }}>As soon as you hit send, it's out of your control.</Typography>
+          <Typography sx={{width: "211px"}}>AI chatbots process and analyze vast amounts of data in order to learn how to generate helpful responses. This ability to learn comes with privacy implications, as AI companies may store and analyze your chatbot conversations.</Typography>
+          <Stack sx={{width: "431px"}} spacing={1}>
+            <Stack direction="row" spacing={2} alignItems={"center"} justifyContent={"space-between"}>
+              <Typography sx={{fontSize: "70px", color: "#6694C5"}}>63%</Typography>
+              <Typography>of consumers fear that generative AI might expose users' personal data through security breaches or other forms of data misuse (IAPP, 2024).</Typography>
+            </Stack>
+            <Stack direction="row" spacing={2} alignItems={"center"} justifyContent={"space-between"}>
+              <Typography alignSelf={"center"} sx={{fontSize: "70px", color: "#6694C5"}}>81%</Typography>
+              <Typography>of consumers think that AI companies will use their data for purposes that were not originally disclosed or intended (IAPP, 2024).</Typography>
+            </Stack>
+          </Stack>
         </Stack>
-        <Grid container spacing={6} alignItems="stretch">
-          {items.map(({ title, description }, i) => (
-          <Grid key={i} display="flex" sx={{
-            justifyContent: "space-between",
-            alignItems: "center",
-          }}>
-            <InfoBox title={title} description={description} sx={{ border: "1px solid #D9D9D9", borderRadius: "15px", padding: "24px"}} />
-          </Grid>
-          ))}
-        </Grid>
         
     </Stack>
     )

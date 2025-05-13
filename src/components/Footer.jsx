@@ -11,11 +11,15 @@ const Footer = () => {
         <Stack direction={"column"} spacing={2}>
             <Typography sx={{color: "#6694C5", fontWeight: 700}}>Product</Typography>
             <Typography>Home</Typography>
-            <Typography>Download</Typography>
+            <Typography component="a" href="https://drive.google.com/file/d/18Feum7N6kNE5VVyPV-_BRZr50gN2hapS/view?usp=drive_link" target="_blank" rel="noopener noreferrer"  sx={{ textDecoration: 'none', cursor: 'pointer' }}>
+                Download
+            </Typography>
         </Stack>
         <Stack direction={"column"} spacing={2}>
             <Typography sx={{color: "#6694C5", fontWeight: 700}}>About</Typography>
-            <Typography>Project Paper</Typography>
+            <Typography component="a" href="https://drive.google.com/file/d/18Feum7N6kNE5VVyPV-_BRZr50gN2hapS/view?usp=drive_link" target="_blank" rel="noopener noreferrer"  sx={{ textDecoration: 'none', cursor: 'pointer' }}>
+                Project Paper
+            </Typography>
             <Typography>Presentation</Typography>
         </Stack>
     </Stack>

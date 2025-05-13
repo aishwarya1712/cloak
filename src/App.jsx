@@ -22,7 +22,7 @@ export default function App() {
     </Stack>
 
   <Stack direction={{ xs: 'column', sm: 'row' }} spacing={{ xs: 2, sm: 5, md: 7.5 }} alignItems={{ xs: 'flex-start', sm: 'center' }} flexWrap="wrap">
-    <Typography component="a" href="https://example.com/paper.pdf" target="_blank" rel="noopener noreferrer"  sx={{ textDecoration: 'none', cursor: 'pointer' }}>
+    <Typography component="a" href="https://drive.google.com/file/d/18Feum7N6kNE5VVyPV-_BRZr50gN2hapS/view?usp=drive_link" target="_blank" rel="noopener noreferrer"  sx={{ textDecoration: 'none', cursor: 'pointer' }}>
       Project Paper
     </Typography>
 

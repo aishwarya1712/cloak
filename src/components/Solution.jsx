@@ -48,10 +48,10 @@ const Solution = () => {
     return (
     <Stack sx={{mt: "60px"}}>
       
-        <Typography sx={{fontSize: "32px", color: "#6694C5", mb: "20px"}}>Meet Cloak</Typography>
+        <Typography sx={{fontSize: "32px", color: "#6694C5", mb: "20px"}}>Our Solution</Typography>
         <Stack direction={"row"} justifyContent={"space-between"} alignItems={"center"}>
           <Box>
-            <Typography fontSize={"58px"}>The smartest thing</Typography><Typography fontSize={"58px"} fontWeight={"bold"}>you'll never send.</Typography>
+            <Typography fontSize={"58px"} sx={{width: "565px"}}>Cloak: the privacy spell-checker for your AI chats.</Typography>
           </Box>
           <Typography sx={{width: "495px", fontSize: "16px", lineHeight: "20px"}}>Let's say you're writing an email to your boss, and you want ChatGPT to make it sound more professional. Paste your query into Cloak, and it will identify personal information and suggest changes. With just a click, you can apply the suggested redactions, ensuring your (and your boss's) information stays private.</Typography>
         </Stack>
