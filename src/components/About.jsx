@@ -66,7 +66,7 @@ export default function About() {
       }}
     >
       <Typography
-        sx={{ fontSize: 40, fontWeight: 'bold', color: '#6694C5' }}
+        sx={{ fontSize: "32px", color: '#6694C5' }}
       >
         About Us
       </Typography>
