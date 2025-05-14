@@ -1,7 +1,5 @@
 import { Box, Divider, Stack, Typography } from '@mui/material';
 import RoundedOutlinedButton from './RoundedOutlinedButton';
-import gptScreenshot from '../assets/GPT.svg';
-// import cloakScreenshot from '../assets/Cloak.svg';
 import cloakScreenshot from '../assets/cloak1.svg';
 import Problem from './Problem';
 import Solution from './Solution';
