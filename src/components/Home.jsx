@@ -6,6 +6,7 @@ import Solution from './Solution';
 import { useRef, forwardRef } from 'react';
 import Features from './Features';
 import Footer from './Footer';
+import About from './About';
 
 const ProblemAndSolution = forwardRef((props, ref) => (
     <div ref={ref}>
@@ -52,6 +53,8 @@ export default function Home() {
         <ProblemAndSolution ref={psRef}/>
         <Divider sx={{ background: "#D9D9D9"}} />
         <Features />
+        <Divider sx={{ my: 5, background: '#D9D9D9' }} />
+        <About />
         <Footer />
     </Box>
     )

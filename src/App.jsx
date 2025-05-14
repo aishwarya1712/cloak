@@ -4,7 +4,7 @@ import { AppBar, Typography, Stack } from '@mui/material';
 import Home from './components/Home';
 import Help from './components/Help';
 import CTAButton from './components/CTAButton';
-import logo from './assets/logo.svg';
+import logo from "./assets/Final-logo-lighter.png"
 
 export default function App() {
   return (

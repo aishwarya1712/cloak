@@ -11,7 +11,7 @@ const Footer = () => {
         <Stack direction={"column"} spacing={2}>
             <Typography sx={{color: "#6694C5", fontWeight: 700}}>Product</Typography>
             <Typography>Home</Typography>
-            <Typography component="a" href="https://drive.google.com/file/d/18Feum7N6kNE5VVyPV-_BRZr50gN2hapS/view?usp=drive_link" target="_blank" rel="noopener noreferrer"  sx={{ textDecoration: 'none', cursor: 'pointer' }}>
+            <Typography component="a" href="https://github.com/aishwarya1712/cloak-ui?tab=readme-ov-file#cloak-ui" target="_blank" rel="noopener noreferrer"  sx={{ textDecoration: 'none', cursor: 'pointer' }}>
                 Download
             </Typography>
         </Stack>
